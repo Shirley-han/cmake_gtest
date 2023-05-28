@@ -1,0 +1,4 @@
+tar -zxvf googletest-1.13.0.tar.gz
+cmake .. -L -G"Unix Makefiles" -DCMAKE_INSTALL_PREFIX=`pwd`/../install
+make -j16
+make install

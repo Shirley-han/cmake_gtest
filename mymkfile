@@ -1,0 +1,15 @@
+
+a.exe: main.o hello.o world.o
+	g++ main.o hello.o world.o
+
+main.o: main.c
+	g++ -c main.o main.c
+
+hello.o: hello.c
+	g++ -c hello.o hello.c
+
+world.o: world.c
+	g++ -c world.o world.c
+
+clean:
+	rm *.o *.exe
